@@ -1,0 +1,103 @@
+body {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+}
+
+.clock-container {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border-style: solid;
+    border-color: #000;
+    border-width: 1px;
+    border-radius: 50%;
+    margin-right: 20px; 
+}
+
+.clock1 {
+    background: linear-gradient(to bottom right, #ff7e5f, #feb47b);
+}
+
+.clock2 {
+    background: linear-gradient(to bottom right, #3498db, #2ecc71);
+}
+
+.clock3 {
+    background: linear-gradient(to bottom right, #3498db, #9b59b6);
+
+}
+
+.clock-hand {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 4px;
+    border-radius: 5px;
+    transform-origin: left;
+    transform: rotate(-90deg);
+}
+
+.hour-number {
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}
+
+.clock-time {
+    position: absolute;
+    top: 320px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+    #second1, #second2, #second3 {
+    border-color: white;
+    background-color: white;
+    border-radius: 5px;
+    height: 4px;
+    width: 125px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-style: solid;
+    border-width: 2px;
+    position: absolute;  
+    top: 148px; 
+    left: 148px;  
+    transform-origin: left;
+    transform: rotate(-90deg);
+}
+
+#minute1, #minute2, #minute3 {
+    height: 4px;
+    width: 104px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: white;
+    background-color: white;
+    border-width: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: absolute;  
+    top: 148px;  
+    left: 148px;  
+    transform-origin: left;
+    transform: rotate(-90deg);
+}
+
+#hour1, #hour2, #hour3 {
+    height: 4px;
+    width: 85px;
+    border-style: solid;
+    background-color:  white;
+    border-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-width: 2px;
+    position: absolute; 
+    top: 148px;  
+    left: 148px;  
+    transform-origin: left;
+    transform: rotate(-90deg);
+}
